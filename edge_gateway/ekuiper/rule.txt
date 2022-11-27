@@ -1,0 +1,17 @@
+{
+  "sql": "SELECT * from my_stream where temperature > 20 and humidity > 50",
+  "actions": [
+    {
+      "log": {}
+    },
+    {
+      "rest": {
+        "url": "https://fcm.googleapis.com/fcm/send",
+        "method": "post",
+        "headers": {"Content-Type": "application/json", "Authorization": "key=AAAAcNy0s7U:APA91bGicWUxvAJfXK8eMNo2uYw_xzCFTVqvnlUfJby2xEP0uWjxH8jYG1_M_WuJfTahz4wxw8CAhQtNsKSoRtLgTYUZXPxP9xQsC5tDDKnfGAPyDPHaTPpEw9d9KIn52Vq8cQwLYcnL"},
+        "bodyType": "json",
+        "dataTemplate": "{\"to\": \"/topics/weatherzaraanthra\", \"notification\": {\"body\": \"Parametri izvan granica!\", \"title\": \"Alert\"}}"
+      }
+    }
+  ]
+}

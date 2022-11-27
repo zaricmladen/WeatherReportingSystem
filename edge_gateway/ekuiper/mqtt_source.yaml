@@ -1,0 +1,9 @@
+#Global MQTT configurations
+default:
+  qos: 1
+  server: "tcp://192.168.1.8:1883"
+  username: client_login 
+  password: zaraanthra
+  #certificationPath: /var/kuiper/xyz-certificate.pem
+  #privateKeyPath: /var/kuiper/xyz-private.pem.key
+  connectionSelector: mqtt.localConnection

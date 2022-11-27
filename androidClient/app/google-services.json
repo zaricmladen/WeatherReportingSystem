@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "484739167157",
+    "project_id": "weatherreportingsystem-34285",
+    "storage_bucket": "weatherreportingsystem-34285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484739167157:android:eae2f0b21a668f5a795ffc",
+        "android_client_info": {
+          "package_name": "mladen.mosis.elfak.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484739167157-5sj75qf9fhphhrr5ocqij14md2lfntr6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mladen.mosis.elfak.myapplication",
+            "certificate_hash": "5508a330132794c2e7c43b1ba5d7d0a0f20ff8e6"
+          }
+        },
+        {
+          "client_id": "484739167157-hvdvevdhjp14bf298uj78sg4sa6af8e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD55OcZR1mwcLKV8HuVDZWYgdPTjk7WZyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484739167157-hvdvevdhjp14bf298uj78sg4sa6af8e6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

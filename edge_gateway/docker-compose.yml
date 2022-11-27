@@ -1,0 +1,32 @@
+version: '3.0'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    volumes:
+      - ./:/mosquitto
+    ports:
+      - 1883:1883
+      - 9001:9001
+    environment:
+      - "TZ=Europe/Belgrade"
+    restart: always
+  python-client:
+    build: ./mqttClient-python
+    environment:
+      - "TZ=Europe/Belgrade"
+    depends_on:
+      - mosquitto
+    restart: always
+  ekuiper:
+    build: ./ekuiper
+    ports:
+      - 9081:9081
+    environment:
+      - "TZ=Europe/Belgrade"
+    depends_on:
+     - mosquitto
+    restart: always
+volumes:
+  mosquitto-data:

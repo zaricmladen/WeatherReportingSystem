@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Weather Reporter</string>
+    <string name="title_login">Login</string>
+    <string name="full_name">Name</string>
+    <string name="msg_token_fmt">xs</string>
+</resources>

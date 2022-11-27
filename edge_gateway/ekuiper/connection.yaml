@@ -1,0 +1,11 @@
+mqtt:
+  localConnection: #connection key
+    server: "tcp://192.168.1.5:1883"
+    username: client_login
+    password: zaraanthra
+    #certificationPath: /var/kuiper/xyz-certificate.pem
+    #privateKeyPath: /var/kuiper/xyz-private.pem.ke
+    #insecureSkipVerify: false
+    #protocolVersion: 3
+    clientid: ekuiper
+
